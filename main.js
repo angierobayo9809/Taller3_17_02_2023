@@ -3,15 +3,9 @@
 let numero1 = prompt("Ingrese el número 1");
 let numero2 = prompt("Ingrese el número 2");
 
-if (numero1 == numero2)
-{
-    alert("Los números son iguales");
-}
-else if (numero1 > numero2)
-{
-    alert("El número "+numero1+" es mayor");
-}
+let suma = Number(numero1) + Number(numero2);
+
+if (isNaN(suma))
+    alert("Error en los números ingresados.");
 else
-{
-    alert("El número "+numero2+" es mayor");
-}
+    alert("La suma de los números ingresados es de "+suma);
