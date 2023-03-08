@@ -1,21 +1,12 @@
-let A = prompt("Ingrese el número 1");
-let B = prompt("Ingrese el número 2");
-let C = prompt("Ingrese el número 3");
-let arreglo = [A,B,C];
-let numMenor=Number(A);
-let numMayor=Number(A);
+let cantidadMax = 0;
+let inicio = 1;
 
-for (let x = 0; x <arreglo.length; x++)
+while (cantidadMax < 100)
 {
-        if (numMayor < Number(arreglo[x]))
+        if (inicio % 2 == 0)
         {
-            numMayor =Number(arreglo[x]);
+            console.log(inicio);
+            cantidadMax++;
         }
-        
-        if (numMenor > Number(arreglo[x]))
-        {
-            numMenor =Number(arreglo[x]);
-        }
+    inicio++;
 }
-
-alert("El número menor es "+numMenor+" el número mayor es "+ numMayor);
