@@ -1,14 +1,15 @@
-let numeros = prompt("Ingrese la cantidad de números a evaluar");
-let numMayor =0;
-for (let x=0; x <Number(numeros); x++)
+let num = prompt("Ingrese un número");
+let suma = new Number;
+for (let x = Number(num)-1; x > 0; x--)
 {
-    let numero = prompt("Ingrese el numero "+x);
-    if (x==0)
-        numMayor = Number(numero);
-
-    if (numMayor < Number(numero))
-        numMayor = Number(numero);
-
+    if (Number(num) % x == 0)
+    {
+        suma+=Number(x);
+        console.log(suma);
+    }
 }
 
-alert("El número máximo fue:"+numMayor);
+if (suma == Number(num))
+    alert("El número "+num+" es perfecto");
+else
+    alert("El número "+num+" no es perfecto");
