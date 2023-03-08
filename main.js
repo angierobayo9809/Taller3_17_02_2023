@@ -1,11 +1,21 @@
-/*1.	Realizar un programa que permita leer 2 números diferentes y nos diga cual es el mayor de los 2 números.*/
+let A = prompt("Ingrese el número 1");
+let B = prompt("Ingrese el número 2");
+let C = prompt("Ingrese el número 3");
+let arreglo = [A,B,C];
+let numMenor=Number(A);
+let numMayor=Number(A);
 
-let numero1 = prompt("Ingrese el número 1");
-let numero2 = prompt("Ingrese el número 2");
+for (let x = 0; x <arreglo.length; x++)
+{
+        if (numMayor < Number(arreglo[x]))
+        {
+            numMayor =Number(arreglo[x]);
+        }
+        
+        if (numMenor > Number(arreglo[x]))
+        {
+            numMenor =Number(arreglo[x]);
+        }
+}
 
-let suma = Number(numero1) + Number(numero2);
-
-if (isNaN(suma))
-    alert("Error en los números ingresados.");
-else
-    alert("La suma de los números ingresados es de "+suma);
+alert("El número menor es "+numMenor+" el número mayor es "+ numMayor);
